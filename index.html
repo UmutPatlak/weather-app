@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+</head>
+
+<body
+  class="bg-gradient-to-br from-blue-900 via-purple-900 to-slate-900 flex items-center justify-center min-h-screen font-sans">
+
+  <div class="bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl rounded-3xl p-8 w-full max-w-md">
+
+    <h1 class="text-3xl text-white font-bold text-center mb-8">
+      Hava Durumu
+    </h1>
+
+    <div class="flex gap-3 mb-8">
+      <input type="text" id="city-input" placeholder="Şehir adı girin"
+        class="flex-1 bg-white/20 border border-white/10 text-white placeholder-gray-300 px-5 py-3 rounded-xl outline-none focus:ring-2 focus:ring-blue-400 transition-all">
+      <button id="search-btn"
+        class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-xl transition-colors font-semibold shadow-lg">
+        Ara
+      </button>
+    </div>
+
+    <div id="weather-result" class="text-center text-white">
+      <h2 class="text-4xl font-semibold mb-2" id="city-name">İstanbul</h2>
+      <div id="weather-icon" class="text-8xl my-4 drop-shadow-lg">🌤️</div>
+      <p class="text-6xl font-bold mb-4" id="temperature">24°C</p>
+      <p class="text-xl text-blue-200 capitalize" id="description">Parçalı Bulutlu</p>
+
+      <div class="flex justify-between mt-8 p-4 bg-black/20 rounded-2xl">
+        <div class="text-center">
+          <p class="text-gray-300 text-sm">Nem</p>
+          <p class="text-xl font-semibold" id="humidity">%65</p>
+        </div>
+        <div class="text-center">
+          <p class="text-gray-300 text-sm">Rüzgar</p>
+          <p class="text-xl font-semibold" id="wind">12 km/s</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
